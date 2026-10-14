@@ -1,34 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-page="home">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chris Chau | Portfolio Test</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #0f172a;
-      color: #f8fafc;
-    }
-    .card {
-      text-align: center;
-      padding: 2.5rem;
-      border-radius: 12px;
-      background: #1e293b;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-    h1 { color: #38bdf8; margin-bottom: 0.5rem; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chris Chau is a design leader and design engineer working across product design, frontend, design systems, and AI-enabled workflows.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Chris Chau | Design Leader & Design Engineer">
+  <meta property="og:description" content="Product craft, frontend thinking, and the way teams build.">
+  <title>Chris Chau | Design Leader & Design Engineer</title>
+  <link rel="icon" href="assets/profile/chris-mark.png" type="image/png">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=projects-3">
+  <script src="site.js?v=projects-3" defer></script>
 </head>
 <body>
-  <div class="card">
-    <h1>Hello World! 👋</h1>
-    <p>GitHub Pages test for <strong>chrisdoesuiux.github.io</strong> is working!</p>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header shell" id="top">
+    <a class="brand" href="index.html" aria-label="Chris Chau home"><img src="assets/profile/chris-mark.png" width="40" height="40" alt=""><span>Chris Chau</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#resume">Resume</a><button class="theme-toggle icon-button" type="button" aria-label="Switch color theme" title="Switch color theme" hidden><span class="icon icon-sun" aria-hidden="true"></span></button></nav>
+  </header>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <h1 id="hero-heading">I design <span class="hero-product">products.</span><br>And how <span class="hero-team">teams</span> build them.</h1>
+        <p><span class="hero-role"><span class="icon icon-pen-nib" aria-hidden="true"></span>Design leader</span> and <span class="hero-role"><span class="icon icon-code" aria-hidden="true"></span>design engineer.</span> Bringing product craft, frontend thinking, and AI into the way teams work.</p>
+      </div>
+      <div class="badge-scene">
+        <div class="badge-assembly">
+          <div class="badge-ribbon" aria-hidden="true"></div>
+          <div class="badge-clip" aria-hidden="true"></div>
+          <a class="id-badge" href="#resume" aria-label="Connect with Chris Chau">
+            <span class="badge-slot" aria-hidden="true"></span>
+            <div class="badge-photo"><img class="hero-character" src="assets/profile/chris-character.png" width="1000" height="1000" fetchpriority="high" alt="Chris's illustrated character with folded arms and a CC shirt"></div>
+            <div class="badge-info"><p class="badge-name">Chris Chau</p><p class="badge-role">Design leader &amp; design engineer</p><div class="badge-bottom"><span>Tokyo, Japan</span><span class="badge-connect">Connect <span class="icon icon-arrow-up-right" aria-hidden="true"></span></span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="work-section shell" id="work" aria-labelledby="work-heading">
+      <h2 class="section-label" id="work-heading">Selected Works</h2>
+      <div class="project-gallery">
+        <article class="project-card" aria-labelledby="legalhub-card-title">
+          <div class="project-folder">
+            <button class="project-peek" type="button" aria-label="Preview LegalHub screens" aria-expanded="false" aria-controls="legalhub-card-details">
+              <span class="project-screens" aria-hidden="true">
+                <img class="project-screen screen-left" src="assets/projects/legalhub-documents.png" width="1440" height="1024" loading="lazy" alt="">
+                <img class="project-screen screen-right" src="assets/projects/legalhub-dashboard.png" width="2880" height="2800" loading="lazy" alt="">
+                <img class="project-screen screen-front" src="assets/projects/legalhub-mail.png" width="1440" height="1024" loading="lazy" alt="">
+              </span>
+              <span class="sr-only">Toggle a fan-out preview of the mail, document, and dashboard designs.</span>
+            </button>
+            <a class="project-cover" href="legalhub.html" aria-describedby="legalhub-card-summary">
+              <span class="project-kind">Product design &amp; research</span>
+              <span class="project-stage-label">2026 / Freelance</span>
+              <h3 id="legalhub-card-title">LegalHub <span class="icon icon-arrow-up-right" aria-hidden="true"></span></h3>
+            </a>
+          </div>
+          <div class="project-card-details" id="legalhub-card-details">
+            <p id="legalhub-card-summary">A connected workspace for legal work.</p>
+            <p class="project-role">Role <strong>UI/UX</strong></p>
+            <a class="text-link" href="legalhub.html">Read case study <span class="icon icon-arrow-right" aria-hidden="true"></span></a>
+          </div>
+        </article>
+        <article class="project-card" aria-labelledby="dataseed-card-title">
+          <div class="project-folder">
+            <button class="project-peek" type="button" aria-label="Preview dataseed screens" aria-expanded="false" aria-controls="dataseed-card-details">
+              <span class="project-screens" aria-hidden="true">
+                <img class="project-screen screen-left" src="assets/projects/dataseed-flow.png" width="864" height="400" loading="lazy" alt="">
+                <img class="project-screen screen-right" src="assets/projects/dataseed-dashboard-a.png" width="1002" height="643" loading="lazy" alt="">
+                <img class="project-screen screen-front" src="assets/projects/dataseed-dashboard-b.png" width="1002" height="733" loading="lazy" alt="">
+              </span>
+              <span class="sr-only">Toggle a fan-out preview of the ESG dashboards and screen-flow work.</span>
+            </button>
+            <a class="project-cover" href="dataseed.html" aria-describedby="dataseed-card-summary"><span class="project-kind">Product design &amp; frontend</span><span class="project-stage-label">2025 / Freelance</span><h3 id="dataseed-card-title">dataseed <span class="icon icon-arrow-up-right" aria-hidden="true"></span></h3></a>
+          </div>
+          <div class="project-card-details" id="dataseed-card-details"><p id="dataseed-card-summary">Clearer ESG dashboards and a more connected design-to-delivery process.</p><p class="project-role">Role <strong>UI/UX &amp; Frontend</strong></p><a class="text-link" href="dataseed.html">Read case study <span class="icon icon-arrow-right" aria-hidden="true"></span></a></div>
+        </article>
+        <article class="project-card" aria-labelledby="beatrust-card-title">
+          <div class="project-folder">
+            <button class="project-peek" type="button" aria-label="Preview Beatrust screens" aria-expanded="false" aria-controls="beatrust-card-details">
+              <span class="project-screens" aria-hidden="true">
+                <img class="project-screen screen-left" src="assets/projects/beatrust-mobile-feed.png" width="707" height="938" loading="lazy" alt="">
+                <img class="project-screen screen-right" src="assets/projects/beatrust-design-system.png" width="964" height="880" loading="lazy" alt="">
+                <img class="project-screen screen-front" src="assets/projects/beatrust-posting-after.png" width="800" height="628" loading="lazy" alt="">
+              </span>
+              <span class="sr-only">Toggle a fan-out preview of the posting, mobile, and design-system work.</span>
+            </button>
+            <a class="project-cover" href="beatrust.html" aria-describedby="beatrust-card-summary"><span class="project-kind">Product design &amp; research</span><span class="project-stage-label">2024 / Employment</span><h3 id="beatrust-card-title">Beatrust <span class="icon icon-arrow-up-right" aria-hidden="true"></span></h3></a>
+          </div>
+          <div class="project-card-details" id="beatrust-card-details"><p id="beatrust-card-summary">Employee collaboration, with a shared foundation for design and code.</p><p class="project-role">Role <strong>UI/UX &amp; Product design</strong></p><a class="text-link" href="beatrust.html">Read case study <span class="icon icon-arrow-right" aria-hidden="true"></span></a></div>
+        </article>
+      </div>
+    </section>
+    <section class="about-section shell" id="about" aria-labelledby="about-heading">
+      <div class="about-copy reveal"><p class="section-label">About</p><h2 id="about-heading">A designer who<br>speaks engineer.</h2><p>I’m Chris, a design leader and design engineer with 15 years of experience across the US and Japan.</p><p>I work across product strategy, design systems, frontend decisions, and team development. Today, at Money Forward, I’m building AI-enabled workflows and helping design and engineering work together.</p><p>My background in both design and development helps me connect the experience we intend with the product we deliver.</p></div>
+      <div class="experience reveal"><h3 class="section-label">Experience</h3><ol class="career-list">
+        <li><span class="career-year">2025 - Present</span><div><h4><a href="https://corp.moneyforward.com/" target="_blank">Money Forward</a></h4><p>UI/UX Manager, HR domain</p></div></li>
+        <li><span class="career-year">2019 - 2025</span><div><h4><a href="https://www.works-hi.co.jp/" target="_blank">Works Human Intelligence</a></h4><p>UI/UX Group Manager</p></div></li>
+        <li><span class="career-year">2017 - 2019</span><div><h4>Technology Services Group</h4><p>UI/UX Consultant</p></div></li>
+        <li><span class="career-year">2011 - 2016</span><div><h4>Saggezza</h4><p>Senior UI/UX Engineer to UI/UX Director</p></div></li>
+      </ol></div>
+    </section>
+    <section class="resume-section shell reveal" id="resume" aria-labelledby="resume-heading">
+      <div class="resume-letter">
+        <p class="section-label">Resume</p>
+        <h2 id="resume-heading">The full story.</h2>
+        <div class="letter-body">
+          <p>I love to bring together product design, frontend thinking, design systems, and team development.</p>
+          <p>I’m looking for an opportunity to work with thoughtful, capable people who challenge each other and care about what they build. I want to create useful, well-crafted products together and help the team grow.</p>
+        </div>
+      </div>
+      <aside class="resume-contact" aria-labelledby="contact-heading">
+        <h3 id="contact-heading">Let’s connect.</h3>
+        <p>Want to know more? My resume is available in English and Japanese on request. Get in touch and I’ll send it over.</p>
+        <nav class="contact-methods" aria-label="Contact Chris">
+          <a href="mailto:chrischau421@gmail.com?subject=Resume%20request" aria-label="Email Chris to request a resume"><span><strong>Email</strong><span class="contact-detail">chrischau421@gmail.com</span></span><span class="icon icon-arrow-up-right" aria-hidden="true"></span></a>
+          <a href="https://www.linkedin.com/in/chrisdoesuiux/" target="_blank" rel="noopener">LinkedIn <span class="icon icon-arrow-up-right" aria-hidden="true"></span><span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://x.com/chrisdoesuiux" target="_blank" rel="noopener">X <span class="icon icon-arrow-up-right" aria-hidden="true"></span><span class="sr-only"> (opens in a new tab)</span></a>
+        </nav>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="index.html" aria-label="Chris Chau home"><img src="assets/profile/chris-mark.png" width="36" height="36" alt=""><span>Chris Chau</span></a><a href="#top">Back to top</a></footer>
 </body>
 </html>

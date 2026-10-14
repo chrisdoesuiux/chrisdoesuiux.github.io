@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-page="case">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chris Chau's Beatrust product-design case study: a shared design system, a research-led posting redesign, and collaboration across design and engineering.">
+  <meta name="color-scheme" content="light dark"><title>Beatrust | Chris Chau</title>
+  <link rel="icon" href="assets/profile/chris-mark.png" type="image/png"><link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="styles.css?v=beatrust-leadership-1"><script src="site.js?v=projects-3" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="back-rail" href="index.html#work" aria-label="Back to selected work"><span class="icon icon-arrow-left" aria-hidden="true"></span><span>Back</span></a>
+  <header class="case-header shell"><a class="back-link" href="index.html#work"><span class="icon icon-arrow-left" aria-hidden="true"></span>Back</a><div class="header-right"><a class="brand" href="index.html">Chris Chau</a><button class="theme-toggle icon-button" type="button" aria-label="Switch color theme" hidden><span class="icon icon-sun" aria-hidden="true"></span></button></div></header>
+  <main id="main">
+    <section class="case-hero shell" id="overview" aria-labelledby="case-heading">
+      <p class="case-name">Beatrust</p><h1 id="case-heading">Helping people share.<br>Helping teams build.</h1>
+      <p class="case-summary">Product design for an employee collaboration platform, connecting the user experience with how design and engineering work together.</p>
+      <dl class="case-facts"><div><dt>My contribution</dt><dd>Design leadership,<br> product design and research</dd></div><div><dt>Collaboration</dt><dd>2 junior designers, engineering,<br> product, QA and marketing</dd></div><div><dt>Project</dt><dd>2024<br> Employment</dd></div></dl>
+    </section>
+    <nav class="chapter-nav shell" aria-label="Case study sections"><a href="#overview" aria-current="location">Overview</a><a href="#design-system">Design system</a><a href="#posting">Posting</a><a href="#research">Research</a></nav>
+    <div class="shell"><div class="case-product-pair">
+      <figure><button class="image-expander" type="button" data-image="assets/projects/beatrust-mobile-compose.png" data-caption="Beatrust mobile writing layout" aria-label="Expand the Beatrust mobile writing layout"><img src="assets/projects/beatrust-mobile-compose.png" width="707" height="783" fetchpriority="high" alt="Beatrust mobile design with a dedicated writing area, post title, and content"><span class="expand-affordance"><span class="icon icon-arrows-out" aria-hidden="true"></span></span></button></figure>
+      <figure><button class="image-expander" type="button" data-image="assets/projects/beatrust-mobile-feed.png" data-caption="Beatrust mobile knowledge-sharing feed" aria-label="Expand the Beatrust mobile feed"><img src="assets/projects/beatrust-mobile-feed.png" width="707" height="938" alt="Beatrust mobile feed with a writing prompt, post filters, and shared knowledge"><span class="expand-affordance"><span class="icon icon-arrows-out" aria-hidden="true"></span></span></button></figure>
+    </div><p class="media-caption">Writing and sharing on mobile. Original interface visuals from the project portfolio.</p></div>
+    <section class="case-section shell reveal" id="design-system" aria-labelledby="system-heading">
+      <div class="case-editorial"><h2 id="system-heading">A shared foundation<br>for design and code.</h2><div><p>Figma files and coded components had drifted apart. Without documented guidelines, engineers had to interpret design intent again for each feature.</p><p>I owned both the design system and Storybook, auditing Figma files and CSS and building the shared foundation from scratch. I documented component variants, states, and usage guidance, and managed and mentored two junior designers through design reviews.</p></div></div>
+      <figure class="screen-figure system-figure"><button class="image-expander" type="button" data-image="assets/projects/beatrust-design-system.png" data-caption="Beatrust button specifications and component states" aria-label="Expand the Beatrust design-system specifications"><img src="assets/projects/beatrust-design-system.png" width="964" height="880" loading="lazy" alt="Button specifications showing typography, padding, sizes, icon options, and default, hover, and disabled states"><span class="expand-affordance"><span class="icon icon-arrows-out" aria-hidden="true"></span></span></button><figcaption>Component documentation connecting visual decisions with implementation details.</figcaption></figure>
+      <aside class="case-result" aria-label="Design-system outcome"><p class="case-result-value">15%</p><div><h3>Less development time per task.</h3><p>Development time per task decreased by 15% within the quarter after introducing the design system and Storybook.</p></div></aside>
+      <article class="alignment-story" id="alignment" aria-labelledby="alignment-heading">
+        <h3 id="alignment-heading">Aligning the team around trade-offs.</h3>
+        <p>A complex data-table redesign brought three requirements into tension: Product wanted maximum data density, Engineering flagged DOM performance issues, and Design required WCAG accessibility standards.</p>
+        <p>I facilitated an alignment session and partnered with a frontend lead to prototype progressive disclosure directly in code, using summary rows and a side panel.</p>
+        <dl class="alignment-decisions">
+          <div><dt>Product</dt><dd>Keep high-value data in the summary rows and move secondary columns into a drawer, avoiding horizontal scrolling.</dd></div>
+          <div><dt>Engineering</dt><dd>Use virtualized scrolling for performance, supported by standardized row heights and design tokens.</dd></div>
+          <div><dt>Accessibility</dt><dd>Replace complex custom micro-interactions with standard ARIA patterns, simplifying implementation while preserving accessibility requirements.</dd></div>
+        </dl>
+        <p class="alignment-impact"><strong>Outcome:</strong> Engineering avoided technical debt and met performance benchmarks. Product delivered high-value data access on schedule, while Design maintained the accessibility requirements. Standard ARIA patterns also reduced frontend implementation time.</p>
+      </article>
+    </section>
+    <section class="case-section shell reveal" id="posting" aria-labelledby="posting-heading">
+      <div class="case-editorial"><h2 id="posting-heading">Give writing<br>the space it needs.</h2><div><p>A user survey showed that posts needed room for more than 200 characters. The dialog-first pattern made longer writing difficult, especially on mobile.</p><p>I analysed the survey data and redesigned the posting experience, moving long-form content to standalone pages. The writing layout became more spacious and better suited to touch.</p></div></div>
+      <div class="case-comparison">
+        <figure class="screen-figure"><button class="image-expander" type="button" data-image="assets/projects/beatrust-posting-before.png" data-caption="Beatrust earlier posting dialog" aria-label="Expand the earlier Beatrust posting dialog"><img src="assets/projects/beatrust-posting-before.png" width="564" height="610" loading="lazy" alt="Earlier Beatrust posting dialog with multiple form fields and a compact description area"><span class="expand-affordance"><span class="icon icon-arrows-out" aria-hidden="true"></span></span></button><figcaption>Earlier posting dialog: writing inside a compact form.</figcaption></figure>
+        <figure class="screen-figure"><button class="image-expander" type="button" data-image="assets/projects/beatrust-posting-after.png" data-caption="Beatrust redesigned writing layout" aria-label="Expand the redesigned Beatrust writing layout"><img src="assets/projects/beatrust-posting-after.png" width="800" height="628" loading="lazy" alt="Redesigned Beatrust writing layout with a prominent title, open content area, and supporting controls below"><span class="expand-affordance"><span class="icon icon-arrows-out" aria-hidden="true"></span></span></button><figcaption>Redesigned writing layout: more space for the post itself.</figcaption></figure>
+      </div>
+      <aside class="case-result" aria-label="Posting redesign outcome"><p class="case-result-value">25%</p><div><h3>Higher message posting rate.</h3><p>The message posting rate improved by 25% after the research-led UI/UX improvements.</p></div></aside>
+    </section>
+    <section class="case-section shell reveal" id="research" aria-labelledby="research-heading">
+      <div class="case-editorial"><h2 id="research-heading">Make research<br>part of the rhythm.</h2><div><p>Research needed a repeatable structure so the team could make decisions with confidence, rather than rely on occasional feedback.</p><p>I introduced quarterly focus groups with five target users, combining usability testing and A/B testing. I also partnered with a data engineer on an analytics dashboard.</p></div></div>
+      <div class="process-notes"><div><h3>Listen regularly</h3><p>Scheduled user sessions gave the team a consistent way to understand needs and test changes.</p></div><div><h3>Connect the evidence</h3><p>Click-through rate, onboarding conversion, and task completion complemented the qualitative feedback.</p></div><div><h3>Inform decisions</h3><p>User sessions and live data became inputs to design decisions, alongside the shared component system.</p></div></div>
+    </section>
+    <section class="case-end shell"><h2>Explore the wider work.</h2><p>Product craft, design systems, and the people who build them.</p><a class="text-link" href="index.html#work"><span class="icon icon-arrow-left" aria-hidden="true"></span>Back to selected work</a></section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="index.html"><img src="assets/profile/chris-mark.png" width="36" height="36" alt=""><span>Chris Chau</span></a><a href="index.html#resume">Get in touch</a></footer>
+  <dialog class="image-dialog" aria-labelledby="dialog-caption"><div class="dialog-toolbar"><p id="dialog-caption"></p><button class="dialog-close icon-button" type="button" aria-label="Close expanded image"><span class="icon icon-x" aria-hidden="true"></span></button></div><div class="dialog-image-scroll"><img id="dialog-image" alt=""></div></dialog>
+</body>
+</html>
