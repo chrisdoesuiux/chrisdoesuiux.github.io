@@ -32,25 +32,6 @@
     revealNodes.forEach(node => observer.observe(node));
   } else revealNodes.forEach(node => node.classList.add('is-visible'));
 
-  document.querySelectorAll('.project-card').forEach(card => {
-    const button = card.querySelector('.project-peek');
-    const syncPreview = () => {
-      const hovered = window.matchMedia('(min-width:768px) and (hover:hover) and (pointer:fine)').matches && card.matches(':hover');
-      const open = card.dataset.expanded === 'true' || hovered || card.matches(':has(:focus-visible)');
-      button.setAttribute('aria-expanded', String(open));
-    };
-    button.addEventListener('click', () => {
-      card.dataset.expanded = String(card.dataset.expanded !== 'true');
-      syncPreview();
-    });
-    card.addEventListener('pointerenter', syncPreview);
-    card.addEventListener('pointerleave', syncPreview);
-    card.addEventListener('focusin', syncPreview);
-    card.addEventListener('focusout', () => requestAnimationFrame(syncPreview));
-    document.addEventListener('pointerdown', event => {
-      if (!card.contains(event.target)) { card.dataset.expanded = 'false'; syncPreview(); }
-    });
-  });
   const chapters = document.querySelectorAll('.chapter-nav a');
   if (chapters.length && 'IntersectionObserver' in window) {
     const active = new Set();
