@@ -42,6 +42,16 @@
     },{rootMargin:'-5% 0px -55% 0px',threshold:0});
     chapters.forEach(link => {const section = document.querySelector(link.hash);if(section) observer.observe(section);});
   }
+  const prototypeFrame = document.getElementById('ai-search-frame');
+  const restartPrototype = document.getElementById('ai-search-reset');
+  if (prototypeFrame && restartPrototype) {
+    const prototypeInitialUrl = new URL(prototypeFrame.getAttribute('src'), document.baseURI);
+    restartPrototype.addEventListener('click', () => {
+      const restartUrl = new URL(prototypeInitialUrl);
+      restartUrl.searchParams.set('restart', Date.now().toString());
+      prototypeFrame.src = restartUrl.href;
+    });
+  }
   const dialog = document.querySelector('.image-dialog');
   if (dialog) {
     let returnFocus, previousOverflow;
