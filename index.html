@@ -10,8 +10,8 @@
   <title>Chris Chau | Design Leader & Design Engineer</title>
   <link rel="icon" href="assets/profile/chris-mark.png" type="image/png">
   <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=project-links-1">
-  <script src="site.js?v=project-links-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=hanging-badge-4">
+  <script src="site.js?v=hanging-badge-4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -25,16 +25,34 @@
         <h1 id="hero-heading">I design <span class="hero-product">products.</span><br>And how <span class="hero-team">teams</span> build them.</h1>
         <p><span class="hero-role"><span class="icon icon-pen-nib" aria-hidden="true"></span>Design leader</span> and <span class="hero-role"><span class="icon icon-code" aria-hidden="true"></span>design engineer.</span> Bringing product craft, frontend thinking, and AI into the way teams work.</p>
       </div>
-      <div class="badge-scene">
+      <div class="badge-scene" aria-label="Interactive profile badge">
+        <div class="badge-pin" aria-hidden="true"></div>
         <div class="badge-assembly">
           <div class="badge-ribbon" aria-hidden="true"></div>
           <div class="badge-clip" aria-hidden="true"></div>
-          <a class="id-badge" href="#resume" aria-label="Connect with Chris Chau">
-            <span class="badge-slot" aria-hidden="true"></span>
-            <div class="badge-photo"><img class="hero-character" src="assets/profile/chris-character.png" width="1000" height="1000" fetchpriority="high" alt="Chris's illustrated character with folded arms and a CC shirt"></div>
-            <div class="badge-info"><p class="badge-name">Chris Chau</p><p class="badge-role">Design leader &amp; design engineer</p><div class="badge-bottom"><span>Tokyo, Japan</span><span class="badge-connect">Connect <span class="icon icon-arrow-up-right" aria-hidden="true"></span></span></div></div>
-          </a>
+          <div class="badge-tilt"><div class="badge-flipper">
+            <button class="id-badge badge-front" type="button" aria-describedby="badge-hint" aria-expanded="false">
+              <span class="badge-slot" aria-hidden="true"></span>
+              <span class="badge-card-header"><span>DESIGN &amp; CODE</span><span>CC</span></span>
+              <span class="badge-photo"><img class="hero-character" src="assets/profile/chris-character.png" width="1000" height="1000" fetchpriority="high" draggable="false" alt="Chris's illustrated character with folded arms and a CC shirt"></span>
+              <span class="badge-info"><span class="badge-name">Chris Chau</span><span class="badge-role">Design leader &amp; design engineer</span><span class="badge-bottom"><span>Tokyo, Japan</span><span class="badge-connect">Flip to connect <span class="icon icon-arrow-right" aria-hidden="true"></span></span></span></span>
+            </button>
+            <div class="id-badge badge-back" inert aria-hidden="true">
+              <span class="badge-slot" aria-hidden="true"></span>
+              <div class="badge-back-heading"><img src="assets/profile/chris-mark.png" width="40" height="40" alt=""><button class="badge-return" type="button" aria-label="Flip badge back to portrait"><span class="icon icon-arrow-left" aria-hidden="true"></span></button></div>
+              <p class="badge-back-title">Good things start<br>with a conversation.</p>
+              <p class="badge-back-copy">Product design, frontend thinking,<br>and the way teams build.</p>
+              <div class="badge-links">
+                <a href="mailto:chrischau421@gmail.com">Say hello <span class="icon icon-arrow-up-right" aria-hidden="true"></span></a>
+                <a href="https://www.linkedin.com/in/chrisdoesuiux/" target="_blank" rel="noopener">LinkedIn <span class="icon icon-arrow-up-right" aria-hidden="true"></span><span class="sr-only"> (opens in a new tab)</span></a>
+                <a href="https://x.com/chrisdoesuiux" target="_blank" rel="noopener">X <span class="icon icon-arrow-up-right" aria-hidden="true"></span><span class="sr-only"> (opens in a new tab)</span></a>
+              </div>
+              <span class="badge-back-signature">Chris Chau <span>Let’s connect.</span></span>
+            </div>
+          </div></div>
         </div>
+        <p class="badge-hint" id="badge-hint">Drag to swing. Click to flip.</p>
+        <span class="sr-only" id="badge-keyboard-hint">Use left and right arrow keys to swing. Press Enter or Space to flip. Escape returns to the portrait.</span>
       </div>
     </section>
     <section class="work-section shell" id="work" aria-labelledby="work-heading">
