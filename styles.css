@@ -431,3 +431,25 @@ html[data-page=home]::view-transition-new(root) { animation:return-home .5s var(
   .badge-photo { background:radial-gradient(ellipse at var(--light-x) var(--light-y),#e9d3f6,transparent 75%),linear-gradient(145deg,var(--stage),color-mix(in srgb,var(--stage),#ac97dc 35%)); }
 }
 @media (prefers-reduced-motion:reduce) { .id-badge::before { display:none; } }
+
+/* Secondary app listing; existing app icon lives in assets/munchTimer/. */
+.indie-section { padding-top:72px; }
+.indie-section .section-label { margin-bottom:20px; }
+.indie-feature { display:flex; align-items:center; gap:36px; padding-block:22px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.indie-app-identity { display:flex; align-items:center; gap:14px; flex:1; }
+.indie-app-identity>img { width:48px; height:48px; border-radius:11px; }
+.indie-app-identity h3 { font-size:19px; letter-spacing:-.025em; line-height:1.3; }
+.indie-app-identity p { font-size:13px; margin-top:3px; }
+.indie-platforms { font-size:12px; }
+.indie-platforms span { display:block; font-size:11px; margin-top:3px; }
+.indie-feature>.text-link { font-size:13px; gap:9px; }
+.indie-feature .icon { width:16px; height:16px; }
+@media (max-width:767px) {
+  .indie-section { padding-top:60px; }
+  .indie-section .section-label { margin-bottom:16px; }
+  .indie-feature { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:18px 12px; padding-block:20px; }
+  .indie-app-identity { grid-column:1 / -1; }
+  .indie-platforms { padding-left:62px; font-size:11px; }
+  .indie-platforms span { font-size:10px; }
+  .indie-feature>.text-link { font-size:12px; gap:6px; }
+}
